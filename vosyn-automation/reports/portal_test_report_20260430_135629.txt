@@ -1,0 +1,1590 @@
+================================================================================
+VOSYN PORTAL AUTOMATED TEST REPORT
+Generated: 2026-04-30 13:56:29
+Portals tested: 19
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+  PASS: 11   FAIL: 8   SKIP: 0
+
+Portal             URL Check    Platform     Login        Navigate     Form         Overall   
+--------------------------------------------------------------------------------
+laurentian         PASS         PASS         PASS         PASS         PASS         PASS      
+sfu                PASS         PASS         FAIL         SKIP         SKIP         FAIL      
+concordia          PASS         PASS         PASS         FAIL         SKIP         FAIL      
+mun                PASS         PASS         FAIL         SKIP         SKIP         FAIL      
+guelph             PASS         PASS         PASS         PASS         PASS         PASS      
+saskatchewan       PASS         PASS         PASS         FAIL         SKIP         FAIL      
+ottawa             PASS         PASS         PASS         PASS         PASS         PASS      
+queens             PASS         PASS         PASS         PASS         PASS         PASS      
+unb                PASS         PASS         PASS         PASS         PASS         PASS      
+regina             PASS         PASS         PASS         PASS         PASS         PASS      
+polymtl            PASS         PASS         PASS         FAIL         SKIP         FAIL      
+hec                PASS         PASS         PASS         PASS         PASS         PASS      
+mta                PASS         PASS         PASS         PASS         PASS         PASS      
+royalroads         PASS         PASS         PASS         PASS         PASS         PASS      
+trent              PASS         PASS         PASS         PASS         PASS         PASS      
+sherbrooke         PASS         PASS         FAIL         SKIP         SKIP         FAIL      
+viu                PASS         PASS         PASS         FAIL         SKIP         FAIL      
+wlu                PASS         PASS         PASS         FAIL         SKIP         FAIL      
+smu                PASS         PASS         PASS         PASS         PASS         PASS      
+
+
+================================================================================
+PORTAL: Laurentian University (laurentian)
+URL: https://careerhub.laurentian.ca/employers/login.htm
+Overall: PASS
+Total time: 39.36s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (5.3s)
+      Final URL:    https://careerhub.laurentian.ca/employers/login.htm
+      Page title:   Laurentian University - Laurentian University - Employers - Login
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (10.65s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_46210776600374737' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://careerhub.laurentian.ca/myAccount/dashboard.htm
+      Post-login title:     Laurentian University - My Account - Dashboard
+      Still on login page:  False
+
+  [4] NAVIGATION: PASS  (11.06s)
+      'Post a Job' found:     True
+      'Post a Job' info:      text='work
+Post a Job' tag='button' selector='//button[contains(., 'Post a Job')]'
+      'Post a Job' clicked:   True
+      Modal appeared:          True
+      Modal button clicked:    True
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               https://careerhub.laurentian.ca/myAccount/careers/jobPostings.htm
+
+  [5] FORM SCAN: PASS  (3.8s)
+      Total inputs:       14
+      Total textareas:    0
+      Total selects:      0
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     3
+      Required fields:    0
+
+      ALL VISIBLE FIELDS:
+      Label                                    ID                        Type       Req  
+      --------------------------------------------------------------------------------
+                                               lang_en                   radio      
+                                               lang_both                 radio      
+                                                                         radio      
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_laurentian_01_url_check_20260430_134459.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_laurentian_02_post_login_20260430_134510.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_laurentian_03_navigation_20260430_134521.png
+        04_form: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_laurentian_04_form_20260430_134525.png
+
+
+================================================================================
+PORTAL: Simon Fraser University (sfu)
+URL: https://myexperience.sfu.ca
+Overall: FAIL
+Total time: 15.99s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (6.59s)
+      Final URL:    https://myexperience.sfu.ca/home.htm
+      Page title:   SFU myExperience - My Experiential Learning - Home
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: FAIL  (0.26s)
+      Username field found: False
+      Username field info:  
+      Password field found: False
+      Password field info:  
+      Login button found:   True
+      Login button info:    text='log in' value='' id='' tag='a'
+      Credentials entered:  False
+      Login clicked:        False
+      Post-login URL:       https://myexperience.sfu.ca/home.htm
+      Post-login title:     SFU myExperience - My Experiential Learning - Home
+      Still on login page:  False
+      Error:                Username field not found
+
+  [4] NAVIGATION: SKIP  (0s)
+      'Post a Job' found:     False
+      'Post a Job' info:      
+      'Post a Job' clicked:   False
+      Modal appeared:          False
+      Modal button clicked:    False
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               
+      Error:                   Login failed
+
+  [5] FORM SCAN: SKIP  (0s)
+      Total inputs:       0
+      Total textareas:    0
+      Total selects:      0
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     0
+      Required fields:    0
+      Error:              Login failed
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_sfu_01_url_check_20260430_134540.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_sfu_02_post_login_20260430_134541.png
+
+
+================================================================================
+PORTAL: Concordia University (concordia)
+URL: https://excel.concordia.ca/employers/login-page.htm
+Overall: FAIL
+Total time: 26.6s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (6.5s)
+      Final URL:    https://excel.concordia.ca/employers/login-page.htm
+      Page title:   Excel - Concordia - Concordia - Counselling and Development - Employers / Employeur - Employer Login / Ouverture de session employeur
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (9.68s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_35807922184464636' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://excel.concordia.ca/suspended.htm
+      Post-login title:     Excel - Concordia - suspended
+      Still on login page:  False
+
+  [4] NAVIGATION: FAIL  (2.77s)
+      'Post a Job' found:     False
+      'Post a Job' info:      
+      'Post a Job' clicked:   False
+      Modal appeared:          False
+      Modal button clicked:    False
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               
+      Error:                   'Post a Job' button not found on dashboard
+
+  [5] FORM SCAN: SKIP  (0s)
+      Total inputs:       0
+      Total textareas:    0
+      Total selects:      0
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     0
+      Required fields:    0
+      Error:              Navigation failed
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_concordia_01_url_check_20260430_134555.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_concordia_02_post_login_20260430_134605.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_concordia_03_navigation_20260430_134608.png
+
+
+================================================================================
+PORTAL: Memorial University (mun)
+URL: https://crm.stuaff.mun.ca/login/employer.htm
+Overall: FAIL
+Total time: 22.17s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (4.92s)
+      Final URL:    https://crm.stuaff.mun.ca/login/employer.htm
+      Page title:   MUN Student Services Portal - MUN - Login - Employer
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: FAIL  (9.83s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_8244881167138504' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://crm.stuaff.mun.ca/login/employer.htm
+      Post-login title:     MUN Student Services Portal - MUN - Login - Employer
+      Still on login page:  True
+      Error:                Still on login page after click
+
+  [4] NAVIGATION: SKIP  (0s)
+      'Post a Job' found:     False
+      'Post a Job' info:      
+      'Post a Job' clicked:   False
+      Modal appeared:          False
+      Modal button clicked:    False
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               
+      Error:                   Login failed
+
+  [5] FORM SCAN: SKIP  (0s)
+      Total inputs:       0
+      Total textareas:    0
+      Total selects:      0
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     0
+      Required fields:    0
+      Error:              Login failed
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_mun_01_url_check_20260430_134620.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_mun_02_post_login_20260430_134630.png
+
+
+================================================================================
+PORTAL: University of Guelph (guelph)
+URL: https://experienceguelph.ca/employers/employer-login.htm
+Overall: PASS
+Total time: 41.79s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (7.32s)
+      Final URL:    https://experienceguelph.ca/employers/employer-login.htm
+      Page title:   University of Guelph - My Career - Employers & Community Partners - Employer Login
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (11.26s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_6810930018280519' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://experienceguelph.ca/myAccount/dashboard.htm
+      Post-login title:     University of Guelph - MyAccount - Dashboard
+      Still on login page:  False
+
+  [4] NAVIGATION: PASS  (10.68s)
+      'Post a Job' found:     True
+      'Post a Job' info:      text='Post a Job or Opportunity' tag='a' selector='//a[contains(., 'Post a Job')]'
+      'Post a Job' clicked:   True
+      Modal appeared:          True
+      Modal button clicked:    True
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               https://experienceguelph.ca/myAccount/postings-opportunities/co-op-postings.htm
+
+  [5] FORM SCAN: PASS  (5.28s)
+      Total inputs:       88
+      Total textareas:    2
+      Total selects:      26
+      Total checkboxes:   11
+      Rich text editors:  2
+      Visible fields:     45
+      Required fields:    20
+
+      ALL VISIBLE FIELDS:
+      Label                                    ID                        Type       Req  
+      --------------------------------------------------------------------------------
+      Job Contact First Name *:                answer_4                  text        *
+      Job Contact Last Name *:                 answer_5                  text        *
+      Contact Title *:                         answer_6                  text        *
+      Phone Number :                           answer_7                  text       
+      Phone Extension :                        answer_8                  text       
+      Website :                                answer_9                  text       
+      Email (not visible to students) *:       answer_10                 text        *
+      Address Line One *:                      answer_11                 text        *
+      City *:                                  answer_12                 text        *
+      Postal Code / Zip Code *:                answer_15                 text        *
+      Are you a Third Party Recruiter? :       answer_16                 checkbox   
+      Enable Long Term Placement               longTermPlacement         checkbox   
+      Job Title *:                             answer_20                 text        *
+      Job City *:                              answer_22                 text        *
+      Other                                    other_25                  text       
+      Salary Amount: $                         salaryAmount              text       
+      Payment Frequency                        salaryNotAvailable        checkbox   
+      Hours Per Week:                          hoursPerWeek              text       
+      Anticipated Start Date :                 answer_31                 text       
+      Anticipated End Date :                   answer_32                 text       
+      Access applications through Experience Guelph deliveryOption1           radio      
+      Additional Application Options: Email all applications after the application exp online_applicationEmailOption_2 radio      
+      separate emails with a semi-colon
+                                 text       
+      Additional Application Options: Email Application online_applicationEmailOption_1 radio      
+      separate emails with a semi-colon
+                                 text       
+      Additional Application Options: Do not email applications online_applicationEmailOption_0 radio      
+      Employer Website                         deliveryOption2           radio      
+      Enter the URL (255 character limit) for the website students should be directed  deliveryWebsiteUrl        text       
+      Application Deadline:*                   dateDeadline              text        *
+      Salutation :                             answer_3                  select-one 
+      Province / State *:                      answer_13                 select-one  *
+      Country *:                               answer_14                 select-one  *
+      Position Type *:                         answer_17                 select-one  *
+      Co-op Work Term Semester :               termOverride              select-one 
+      Position Duration *:                     answer_19                 select-one  *
+      Work Location :                          answer_21                 select-one 
+      Job Province / State *:                  answer_23                 select-one  *
+      Job Country *:                           answer_24                 select-one  *
+      Job Category *:                          answer_25                 select-one  *
+      Payment Frequency                        salaryPaymentFrequency    select-one 
+      Number of Positions *:                   answer_33                 select-one  *
+      Date Deadline Time                       dateDeadlineMinutes       select-one 
+      Is this position location accessible by public transit? *: answer_44                 select-one  *
+      Interview Type *:                        answer_45                 select-one  *
+      Artificial Intelligence (AI) is used to screen, assess or select applicants question_7006_146425      select-one 
+
+      REQUIRED FIELDS (need to be mapped):
+        * Job Contact First Name *:                id='answer_4' name='answer_4'
+        * Job Contact Last Name *:                 id='answer_5' name='answer_5'
+        * Contact Title *:                         id='answer_6' name='answer_6'
+        * Email (not visible to students) *:       id='answer_10' name='answer_10'
+        * Address Line One *:                      id='answer_11' name='answer_11'
+        * City *:                                  id='answer_12' name='answer_12'
+        * Postal Code / Zip Code *:                id='answer_15' name='answer_15'
+        * Job Title *:                             id='answer_20' name='answer_20'
+        * Job City *:                              id='answer_22' name='answer_22'
+        * Application Deadline:*                   id='dateDeadline' name='dateDeadline'
+        * Province / State *:                      id='answer_13' name='answer_13'
+        * Country *:                               id='answer_14' name='answer_14'
+        * Position Type *:                         id='answer_17' name='answer_17'
+        * Position Duration *:                     id='answer_19' name='answer_19'
+        * Job Province / State *:                  id='answer_23' name='answer_23'
+        * Job Country *:                           id='answer_24' name='answer_24'
+        * Job Category *:                          id='answer_25' name='answer_25'
+        * Number of Positions *:                   id='answer_33' name='answer_33'
+        * Is this position location accessible by public transit? *: id='answer_44' name='answer_44'
+        * Interview Type *:                        id='answer_45' name='answer_45'
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_guelph_01_url_check_20260430_134645.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_guelph_02_post_login_20260430_134656.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_guelph_03_navigation_20260430_134707.png
+        04_form: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_guelph_04_form_20260430_134712.png
+
+
+================================================================================
+PORTAL: University of Saskatchewan (saskatchewan)
+URL: https://careerlink.usask.ca/login-main/employer-login.htm
+Overall: FAIL
+Total time: 27.62s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (7.16s)
+      Final URL:    https://careerlink.usask.ca/login-main/employer-login.htm
+      Page title:   University of Saskatchewan - CareerLink - Login - Employer
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (8.82s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='submit' value='' id='button_38198032140888805' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://careerlink.usask.ca/suspended.htm
+      Post-login title:     University of Saskatchewan - suspended
+      Still on login page:  False
+
+  [4] NAVIGATION: FAIL  (2.93s)
+      'Post a Job' found:     False
+      'Post a Job' info:      
+      'Post a Job' clicked:   False
+      Modal appeared:          False
+      Modal button clicked:    False
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               
+      Error:                   'Post a Job' button not found on dashboard
+
+  [5] FORM SCAN: SKIP  (0s)
+      Total inputs:       0
+      Total textareas:    0
+      Total selects:      0
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     0
+      Required fields:    0
+      Error:              Navigation failed
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_saskatchewan_01_url_check_20260430_134729.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_saskatchewan_02_post_login_20260430_134737.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_saskatchewan_03_navigation_20260430_134740.png
+
+
+================================================================================
+PORTAL: University of Ottawa (ottawa)
+URL: https://cldc.telfer.uottawa.ca/employer/login.htm
+Overall: PASS
+Total time: 41.79s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (6.69s)
+      Final URL:    https://cldc.telfer.uottawa.ca/employer/login.htm
+      Page title:   Orbis Portal - Telfer School of Management - Employer - Login
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (11.58s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_7652986524350426' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://cldc.telfer.uottawa.ca/myAccount/dashboard.htm
+      Post-login title:     Orbis Portal - My Account - Dashboard
+      Still on login page:  False
+
+  [4] NAVIGATION: PASS  (12.36s)
+      'Post a Job' found:     True
+      'Post a Job' info:      text='work
+Post a Job' tag='button' selector='//button[contains(., 'Post a Job')]'
+      'Post a Job' clicked:   True
+      Modal appeared:          True
+      Modal button clicked:    True
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               https://cldc.telfer.uottawa.ca/myAccount/jobBoard.htm
+
+  [5] FORM SCAN: PASS  (3.94s)
+      Total inputs:       14
+      Total textareas:    0
+      Total selects:      0
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     3
+      Required fields:    0
+
+      ALL VISIBLE FIELDS:
+      Label                                    ID                        Type       Req  
+      --------------------------------------------------------------------------------
+                                               lang_en                   radio      
+                                               lang_both                 radio      
+                                                                         radio      
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_ottawa_01_url_check_20260430_134755.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_ottawa_02_post_login_20260430_134806.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_ottawa_03_navigation_20260430_134819.png
+        04_form: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_ottawa_04_form_20260430_134823.png
+
+
+================================================================================
+PORTAL: Queen's University (queens)
+URL: https://careers.sso.queensu.ca/employers/overview.htm
+Overall: PASS
+Total time: 50.53s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (5.87s)
+      Final URL:    https://careers.sso.queensu.ca/employers/overview.htm
+      Page title:   Queen's University - MyCareer - MyCareer - Employers & Educators - Employers MyCareer Login
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (10.08s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_14450147475145703' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://careers.sso.queensu.ca/myAccount/dashboard.htm
+      Post-login title:     Queen's University - MyCareer - MyAccount - Dashboard
+      Still on login page:  False
+
+  [4] NAVIGATION: PASS  (21.47s)
+      'Post a Job' found:     True
+      'Post a Job' info:      text='Post a Job' tag='a' selector='//a[normalize-space(text())='Post a Job']'
+      'Post a Job' clicked:   True
+      Modal appeared:          True
+      Modal button clicked:    True
+      'Post a New Job' found:  True
+      'Post a New Job' clicked:True
+      Final URL:               https://careers.sso.queensu.ca/myAccount/postings/postings.htm
+
+  [5] FORM SCAN: PASS  (6.36s)
+      Total inputs:       95
+      Total textareas:    3
+      Total selects:      10
+      Total checkboxes:   8
+      Rich text editors:  3
+      Visible fields:     57
+      Required fields:    18
+
+      ALL VISIBLE FIELDS:
+      Label                                    ID                        Type       Req  
+      --------------------------------------------------------------------------------
+      Contact Title :                          answer_4                  text       
+      First Name *:                            answer_5                  text        *
+      Last Name *:                             answer_6                  text        *
+      Address Line One *:                      answer_7                  text        *
+      Address Line Two :                       answer_8                  text       
+      City *:                                  answer_9                  text        *
+      Province *:                              answer_10                 text        *
+      Postal Code *:                           answer_11                 text        *
+      Phone *:                                 answer_12                 text        *
+      Alternate Phone :                        answer_13                 text       
+      Fax :                                    answer_14                 text       
+      Email *:                                 answer_15                 text        *
+      Country :                                answer_16                 text       
+      Website :                                answer_17                 text       
+      Position Title *:                        answer_20                 text        *
+      Number of Positions :                    answer_21                 text       
+      yes                                      answer_22_1               radio      
+      no                                       answer_22_2               radio      
+      Salary Amount *:                         answer_23                 text        *
+      Hourly                                   answer_24_1               radio      
+      Weekly                                   answer_24_2               radio      
+      Monthly                                  answer_24_3               radio      
+      Annual                                   answer_24_4               radio      
+      Unpaid (select "Volunteer" Job Type)     answer_24_5               radio      
+      Other                                    other_25                  text       
+      Location of Work *:                      answer_27                 text        *
+      Approximate Job Start (month) *:         answer_29                 text        *
+      Yes                                      answer_30_1               radio      
+      No                                       answer_30_2               radio      
+      Job Length: 4, 8, 12, 16 months; permanent/continuing; other; unknown; (please i answer_31                 text        *
+      No                                       answer_34_1               radio      
+      Yes                                      answer_34_2               radio      
+      Bachelor                                 answer_36_1               checkbox   
+      Bachelor (Honours)                       answer_36_2               checkbox   
+      Masters                                  answer_36_3               checkbox   
+      Ph.D.                                    answer_36_4               checkbox   
+      Third Party Recruiter - Client Name :    answer_37                 checkbox   
+      Current student - graduating             answer_38_1               checkbox   
+      Current student - returning to current degree program answer_38_2               checkbox   
+      Alumni                                   answer_38_3               checkbox   
+      Application Deadline:*                   dateDeadline              text        *
+      Competition # :                          answer_39                 text       
+      Yes                                      answer_41_1               radio      
+      No                                       answer_41_2               radio      
+      No                                       answer_43_1               radio      
+      Yes                                      answer_43_2               radio      
+      Unknown                                  answer_43_3               radio      
+      Salutation :                             answer_3                  select-one 
+      Job Type *:                              answer_19                 select-one  *
+      Salary Currency *:                       answer_25                 select-one  *
+      Geographic Location of Employer *:       answer_28                 select-one  *
+      Clusters                                 clusters                  select-multiple 
+      Your Cluster Selections                  selectedClusters          select-multiple 
+      Programs                                 programsToAdd             select-multiple 
+      Your Program Selections                  selectedPrograms          select-multiple 
+      Date Deadline Time                       dateDeadlineMinutes       select-one 
+      Preferred Response Method *:             answer_42                 select-one  *
+
+      REQUIRED FIELDS (need to be mapped):
+        * First Name *:                            id='answer_5' name='answer_5'
+        * Last Name *:                             id='answer_6' name='answer_6'
+        * Address Line One *:                      id='answer_7' name='answer_7'
+        * City *:                                  id='answer_9' name='answer_9'
+        * Province *:                              id='answer_10' name='answer_10'
+        * Postal Code *:                           id='answer_11' name='answer_11'
+        * Phone *:                                 id='answer_12' name='answer_12'
+        * Email *:                                 id='answer_15' name='answer_15'
+        * Position Title *:                        id='answer_20' name='answer_20'
+        * Salary Amount *:                         id='answer_23' name='answer_23'
+        * Location of Work *:                      id='answer_27' name='answer_27'
+        * Approximate Job Start (month) *:         id='answer_29' name='answer_29'
+        * Job Length: 4, 8, 12, 16 months; permanent/continuing; other; unknown; (please i id='answer_31' name='answer_31'
+        * Application Deadline:*                   id='dateDeadline' name='dateDeadline'
+        * Job Type *:                              id='answer_19' name='answer_19'
+        * Salary Currency *:                       id='answer_25' name='answer_25'
+        * Geographic Location of Employer *:       id='answer_28' name='answer_28'
+        * Preferred Response Method *:             id='answer_42' name='answer_42'
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_queens_01_url_check_20260430_134836.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_queens_02_post_login_20260430_134846.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_queens_03_navigation_20260430_134907.png
+        04_form: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_queens_04_form_20260430_134914.png
+
+
+================================================================================
+PORTAL: University of New Brunswick (unb)
+URL: https://experience.unb.ca/home/employers/login.htm
+Overall: PASS
+Total time: 49.89s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (6.19s)
+      Final URL:    https://experience.unb.ca/home/employers/login.htm
+      Page title:   UNB - Experience - UNB Experience - Employers - Login
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (11.46s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_8664090418833171' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://experience.unb.ca/myAccount/dashboard.htm
+      Post-login title:     UNB - Experience - MyAccount - Dashboard
+      Still on login page:  False
+
+  [4] NAVIGATION: PASS  (17.62s)
+      'Post a Job' found:     True
+      'Post a Job' info:      text='Post a Job' tag='a' selector='//a[normalize-space(text())='Post a Job']'
+      'Post a Job' clicked:   True
+      Modal appeared:          True
+      Modal button clicked:    True
+      'Post a New Job' found:  True
+      'Post a New Job' clicked:True
+      Final URL:               https://experience.unb.ca/myAccount/co-op/postings.htm
+
+  [5] FORM SCAN: PASS  (5.77s)
+      Total inputs:       65
+      Total textareas:    3
+      Total selects:      10
+      Total checkboxes:   6
+      Rich text editors:  2
+      Visible fields:     42
+      Required fields:    5
+
+      ALL VISIBLE FIELDS:
+      Label                                    ID                        Type       Req  
+      --------------------------------------------------------------------------------
+      Job Contact First Name :                 answer_4                  text       
+      Job Contact Last Name :                  answer_5                  text       
+      Contact Title :                          answer_6                  text       
+      Phone :                                  answer_7                  text       
+      Fax :                                    answer_8                  text       
+      Website :                                answer_9                  text       
+      Email :                                  answer_10                 text       
+      Address Line One :                       answer_11                 text       
+      Address Line Two :                       answer_12                 text       
+      City :                                   answer_13                 text       
+      Postal Code / Zip Code :                 answer_15                 text       
+      Co-op                                    answer_18_1               checkbox   
+      Job Title *:                             answer_19                 text        *
+      Competition Number :                     answer_20                 text       
+      Job Location *:                          answer_21                 text        *
+      Duration *:                              answer_22                 text        *
+      Degree :                                 answer_23                 text       
+      Number of Positions *:                   answer_26                 text        *
+      Salary Amount: $                         salaryAmount              text       
+      Payment Frequency                        salaryNotAvailable        checkbox   
+      Hours Per Week:                          hoursPerWeek              text       
+      Yes                                      answer_30_1               radio      
+      No                                       answer_30_2               radio      
+      Apply through UNB Co-op Portal           deliveryOption1           radio      
+      Apply via website                        deliveryOption2           radio      
+      Enter URL for website you want students directed to: deliveryWebsiteUrl        text       
+      Application Deadline:*                   dateDeadline              text        *
+      Cover Letter                             answer_35_1               checkbox   
+      Resume                                   answer_35_2               checkbox   
+      Transcript                               answer_35_3               checkbox   
+      other                                    answer_35_4               checkbox   
+      Additional Comments :                    answer_28                 textarea   
+      Salutation :                             answer_3                  select-one 
+      Province / State :                       answer_14                 select-one 
+      Country :                                answer_16                 select-one 
+      Term Posted :                            termOverride              select-one 
+      Payment Frequency                        salaryPaymentFrequency    select-one 
+      Clusters                                 clusters                  select-multiple 
+      Your Cluster Selections                  selectedClusters          select-multiple 
+      Programs                                 programsToAdd             select-multiple 
+      Your Program Selections                  selectedPrograms          select-multiple 
+      Date Deadline Time                       dateDeadlineMinutes       select-one 
+
+      REQUIRED FIELDS (need to be mapped):
+        * Job Title *:                             id='answer_19' name='answer_19'
+        * Job Location *:                          id='answer_21' name='answer_21'
+        * Duration *:                              id='answer_22' name='answer_22'
+        * Number of Positions *:                   id='answer_26' name='answer_26'
+        * Application Deadline:*                   id='dateDeadline' name='dateDeadline'
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_unb_01_url_check_20260430_134929.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_unb_02_post_login_20260430_134941.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_unb_03_navigation_20260430_134959.png
+        04_form: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_unb_04_form_20260430_135004.png
+
+
+================================================================================
+PORTAL: University of Regina (regina)
+URL: https://uregina-csm.symplicity.com/employers/index.php?signin_tab=0
+Overall: PASS
+Total time: 43.92s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (7.28s)
+      Final URL:    https://uregina-csm.symplicity.com/employers/index.php?signin_tab=0&signin_tab=0
+      Page title:   Sign in
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (12.12s)
+      Username field found: True
+      Username field info:  id='username' name='username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='password' name='password' type='password'
+      Login button found:   True
+      Login button info:    text='' value='sign in' id='' tag='input'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://uregina-csm.symplicity.com/employers/app/home
+      Post-login title:     Uregina CareersLink
+      Still on login page:  False
+
+  [4] NAVIGATION: PASS  (13.28s)
+      'Post a Job' found:     True
+      'Post a Job' info:      text='Post a Job
+Recruit for your job, internship, or ot' tag='a' selector='//a[contains(., 'Post a Job')]'
+      'Post a Job' clicked:   True
+      Modal appeared:          False
+      Modal button clicked:    False
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               https://uregina-csm.symplicity.com/employers/index.php?s=jobs&ss=jobs&_ksl=1&mode=list
+
+  [5] FORM SCAN: PASS  (3.71s)
+      Total inputs:       8
+      Total textareas:    0
+      Total selects:      2
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     3
+      Required fields:    0
+
+      ALL VISIBLE FIELDS:
+      Label                                    ID                        Type       Req  
+      --------------------------------------------------------------------------------
+      Keywords                                 empjobfilters_keywords_   text       
+      Contact Name                             empjobfilters_contacts_   text       
+                                               employernonocrjobs_sortby select-one 
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_regina_01_url_check_20260430_135019.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_regina_02_post_login_20260430_135032.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_regina_03_navigation_20260430_135045.png
+        04_form: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_regina_04_form_20260430_135049.png
+
+
+================================================================================
+PORTAL: Polytechnique Montréal (polymtl)
+URL: https://laruche.polymtl.ca/sp/ssp/r/employeur/login?session=7731575860532
+Overall: FAIL
+Total time: 27.61s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (5.47s)
+      Final URL:    https://laruche.polymtl.ca/sp/ssp/r/employeur/login?session=10644460054593
+      Page title:   Connexion
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (12.1s)
+      Username field found: True
+      Username field info:  id='p101_username' name='p101_username' type='text' placeholder='nom d'utilisateur'
+      Password field found: True
+      Password field info:  id='p101_password' name='p101_password' type='password'
+      Login button found:   True
+      Login button info:    text='connexion' value='' id='b8433504523197640' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://laruche.polymtl.ca/sp/ssp/r/employeur/tableau-bord?session=10644460054593
+      Post-login title:     Home
+      Still on login page:  False
+
+  [4] NAVIGATION: FAIL  (2.27s)
+      'Post a Job' found:     False
+      'Post a Job' info:      
+      'Post a Job' clicked:   False
+      Modal appeared:          False
+      Modal button clicked:    False
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               
+      Error:                   'Post a Job' button not found on dashboard
+
+  [5] FORM SCAN: SKIP  (0s)
+      Total inputs:       0
+      Total textareas:    0
+      Total selects:      0
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     0
+      Required fields:    0
+      Error:              Navigation failed
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_polymtl_01_url_check_20260430_135102.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_polymtl_02_post_login_20260430_135115.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_polymtl_03_navigation_20260430_135117.png
+
+
+================================================================================
+PORTAL: HEC Montréal (hec)
+URL: https://macarriere.hec.ca/register/c_employeurs.htm
+Overall: PASS
+Total time: 45.73s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (6.5s)
+      Final URL:    https://macarriere.hec.ca/register/c_employeurs.htm
+      Page title:   Portail Web Ma Carrière - Ma Carrière - Employeurs - Connexion
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (10.61s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='connexion' value='' id='button_4887383514420284' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://macarriere.hec.ca/myAccount/dashboard.htm
+      Post-login title:     My Career Web Portal - MyAccount - Dashboard
+      Still on login page:  False
+
+  [4] NAVIGATION: PASS  (15.94s)
+      'Post a Job' found:     True
+      'Post a Job' info:      text='Post a Job' tag='a' selector='//a[normalize-space(text())='Post a Job']'
+      'Post a Job' clicked:   True
+      Modal appeared:          True
+      Modal button clicked:    True
+      'Post a New Job' found:  True
+      'Post a New Job' clicked:True
+      Final URL:               https://macarriere.hec.ca/myAccount/postings.htm
+
+  [5] FORM SCAN: PASS  (4.93s)
+      Total inputs:       14
+      Total textareas:    0
+      Total selects:      0
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     3
+      Required fields:    0
+
+      ALL VISIBLE FIELDS:
+      Label                                    ID                        Type       Req  
+      --------------------------------------------------------------------------------
+                                               lang_fr                   radio      
+                                               lang_both                 radio      
+                                                                         radio      
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_hec_01_url_check_20260430_135132.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_hec_02_post_login_20260430_135142.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_hec_03_navigation_20260430_135158.png
+        04_form: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_hec_04_form_20260430_135203.png
+
+
+================================================================================
+PORTAL: Mount Allison University (mta)
+URL: https://experience.mta.ca/employer/login.htm
+Overall: PASS
+Total time: 50.68s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (5.15s)
+      Final URL:    https://experience.mta.ca/employer/login.htm
+      Page title:   Mount Allison University - Mount Allison University - Employer - Employer Login
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (10.67s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_32909265241074737' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://experience.mta.ca/myAccount/dashboard.htm
+      Post-login title:     Mount Allison University - My Account - Dashboard
+      Still on login page:  False
+
+  [4] NAVIGATION: PASS  (19.5s)
+      'Post a Job' found:     True
+      'Post a Job' info:      text='work
+Post a Job or Opportunity' tag='button' selector='//button[contains(., 'Post a Job')]'
+      'Post a Job' clicked:   True
+      Modal appeared:          True
+      Modal button clicked:    True
+      'Post a New Job' found:  True
+      'Post a New Job' clicked:True
+      Final URL:               https://experience.mta.ca/myAccount/careerservices/careerjobbank.htm
+
+  [5] FORM SCAN: PASS  (7.06s)
+      Total inputs:       87
+      Total textareas:    4
+      Total selects:      9
+      Total checkboxes:   25
+      Rich text editors:  4
+      Visible fields:     66
+      Required fields:    6
+
+      ALL VISIBLE FIELDS:
+      Label                                    ID                        Type       Req  
+      --------------------------------------------------------------------------------
+      Contact First Name :                     answer_4                  text       
+      Contact Last Name :                      answer_5                  text       
+      Contact Title :                          answer_6                  text       
+      Phone :                                  answer_7                  text       
+      Website :                                answer_8                  text       
+      Email :                                  answer_9                  text       
+      Address Line One :                       answer_10                 text       
+      Address Line Two :                       answer_11                 text       
+      City *:                                  answer_12                 text        *
+      Postal Code / Zip Code :                 answer_14                 text       
+      Opportunity Title *:                     answer_16                 text        *
+      Location *:                              answer_17                 text        *
+      Remote                                   answer_19_1               radio      
+      On-site                                  answer_19_2               radio      
+      Hybrid                                   answer_19_3               radio      
+      Current Student                          answer_22_1               checkbox   
+      Full-time                                answer_22_2               checkbox   
+      N/A                                      answer_22_3               checkbox   
+      Off-campus                               answer_22_4               checkbox   
+      On-campus                                answer_22_5               checkbox   
+      Part-time                                answer_22_6               checkbox   
+      Recent Grad                              answer_22_7               checkbox   
+      Summer                                   answer_22_8               checkbox   
+      Volunteer                                answer_22_9               checkbox   
+      N/A                                      answer_23_1               checkbox   
+      Academic Department                      answer_23_2               checkbox   
+      Student Affairs                          answer_23_3               checkbox   
+      Residence Life                           answer_23_4               checkbox   
+      Dining, Bar & Events                     answer_23_5               checkbox   
+      Computing Services                       answer_23_6               checkbox   
+      Athletics                                answer_23_7               checkbox   
+      Library                                  answer_23_8               checkbox   
+      Other                                    answer_23_                checkbox   
+      Other                                    other_23                  text       
+      Yes                                      answer_24_1               radio      
+      No                                       answer_24_2               radio      
+      Salary Amount: $                         salaryAmount              text       
+      Payment Frequency                        salaryNotAvailable        checkbox   
+      Hours Per Week:                          hoursPerWeek              text       
+      Yes                                      answer_27_1               radio      
+      No                                       answer_27_2               radio      
+      Applications submitted through Experience MtA deliveryOption1           radio      
+      Additional Application Options: Email all applications after the application exp online_applicationEmailOption_2 radio      
+      separate emails with a semi-colon
+                                 text       
+      Additional Application Options: Email Application online_applicationEmailOption_1 radio      
+      separate emails with a semi-colon
+                                 text       
+      Additional Application Options: Do not email applications online_applicationEmailOption_0 radio      
+      Applications submitted through corporate website or job board deliveryOption2           radio      
+      Enter URL for website you want students directed to: deliveryWebsiteUrl        text       
+      Application Deadline:*                   dateDeadline              text        *
+      Number of Positions :                    answer_28                 text       
+      Cover Letter                             answer_31_1               checkbox   
+      Resume                                   answer_31_2               checkbox   
+      References                               answer_31_3               checkbox   
+      Short Essay                              answer_31_4               checkbox   
+      Other                                    answer_31_5               checkbox   
+      Transcript                               answer_31_6               checkbox   
+      Province / State *:                      answer_13                 select-one  *
+      Country :                                answer_15                 select-one 
+      Term *:                                  termOverride              select-one  *
+      Clusters                                 clusters                  select-multiple 
+      Your Cluster Selections                  selectedClusters          select-multiple 
+      Programs                                 programsToAdd             select-multiple 
+      Your Program Selections                  selectedPrograms          select-multiple 
+      Payment Frequency                        salaryPaymentFrequency    select-one 
+      Date Deadline Time                       dateDeadlineMinutes       select-one 
+
+      REQUIRED FIELDS (need to be mapped):
+        * City *:                                  id='answer_12' name='answer_12'
+        * Opportunity Title *:                     id='answer_16' name='answer_16'
+        * Location *:                              id='answer_17' name='answer_17'
+        * Application Deadline:*                   id='dateDeadline' name='dateDeadline'
+        * Province / State *:                      id='answer_13' name='answer_13'
+        * Term *:                                  id='termOverride' name='termOverride'
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_mta_01_url_check_20260430_135217.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_mta_02_post_login_20260430_135228.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_mta_03_navigation_20260430_135248.png
+        04_form: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_mta_04_form_20260430_135255.png
+
+
+================================================================================
+PORTAL: Royal Roads University (royalroads)
+URL: https://royalroads-csm.symplicity.com/employers/index.php?signin_tab=0
+Overall: PASS
+Total time: 36.3s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (6.59s)
+      Final URL:    https://royalroads-csm.symplicity.com/employers/index.php?signin_tab=0&signin_tab=0
+      Page title:   Sign in
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (10.68s)
+      Username field found: True
+      Username field info:  id='username' name='username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='password' name='password' type='password'
+      Login button found:   True
+      Login button info:    text='' value='sign in' id='' tag='input'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://royalroads-csm.symplicity.com/employers/app/home
+      Post-login title:     Career Roads
+      Still on login page:  False
+
+  [4] NAVIGATION: PASS  (13.01s)
+      'Post a Job' found:     True
+      'Post a Job' info:      text='Post a Job
+Recruit for your job, internship, or ot' tag='a' selector='//a[contains(., 'Post a Job')]'
+      'Post a Job' clicked:   True
+      Modal appeared:          False
+      Modal button clicked:    False
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               https://royalroads-csm.symplicity.com/employers/index.php?s=jobs&ss=jobs&_ksl=1&mode=list
+
+  [5] FORM SCAN: PASS  (4.55s)
+      Total inputs:       8
+      Total textareas:    0
+      Total selects:      1
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     2
+      Required fields:    0
+
+      ALL VISIBLE FIELDS:
+      Label                                    ID                        Type       Req  
+      --------------------------------------------------------------------------------
+      Keywords                                 empjobfilters_keywords_   text       
+      Contact Name                             empjobfilters_contacts_   text       
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_royalroads_01_url_check_20260430_135303.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_royalroads_02_post_login_20260430_135314.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_royalroads_03_navigation_20260430_135327.png
+        04_form: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_royalroads_04_form_20260430_135332.png
+
+
+================================================================================
+PORTAL: Trent University (trent)
+URL: https://ccr.trentu.ca/employer/employer.htm
+Overall: PASS
+Total time: 50.95s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (6.18s)
+      Final URL:    https://ccr.trentu.ca/employer/employer.htm
+      Page title:   Trent University Career & Co-Curricular Record - Trent University Career & Co-Curricular Record - Employer/Host Organization - Employer/Host Login
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (12.27s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_43325670411088524' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://ccr.trentu.ca/myAccount/dashboard.htm
+      Post-login title:     Trent University Career & Co-Curricular Record - MyAccount - Dashboard
+      Still on login page:  False
+
+  [4] NAVIGATION: PASS  (20.09s)
+      'Post a Job' found:     True
+      'Post a Job' info:      text='Post a Job' tag='a' selector='//a[normalize-space(text())='Post a Job']'
+      'Post a Job' clicked:   True
+      Modal appeared:          True
+      Modal button clicked:    True
+      'Post a New Job' found:  True
+      'Post a New Job' clicked:True
+      Final URL:               https://ccr.trentu.ca/myAccount/career/postings.htm
+
+  [5] FORM SCAN: PASS  (5.37s)
+      Total inputs:       78
+      Total textareas:    3
+      Total selects:      8
+      Total checkboxes:   9
+      Rich text editors:  3
+      Visible fields:     48
+      Required fields:    7
+
+      ALL VISIBLE FIELDS:
+      Label                                    ID                        Type       Req  
+      --------------------------------------------------------------------------------
+      Phone :                                  answer_6                  text       
+      Fax :                                    answer_7                  text       
+      Website *:                               answer_8                  text        *
+      Email :                                  answer_9                  text       
+      Address Line One :                       answer_10                 text       
+      Address Line Two :                       answer_11                 text       
+      City :                                   answer_12                 text       
+      Postal Code / Zip Code :                 answer_14                 text       
+      Opportunity Title *:                     answer_17                 text        *
+      Other                                    other_18                  text       
+      TWSP (Trent Work Study Program - Canadian Students) answer_19_1               checkbox   
+      TIP (Trent International Program - International Students) answer_19_2               checkbox   
+      TSWEP (Trent Summer Work Experience Program - Canadian Students) answer_19_3               checkbox   
+      All Students Are Eligible                answer_19_4               checkbox   
+      Other                                    answer_19_                checkbox   
+      Other                                    other_19                  text       
+      Student                                  answer_20_1               radio      
+      Entry Level                              answer_20_2               radio      
+      Experienced                              answer_20_3               radio      
+      Management/Executive                     answer_20_4               radio      
+      Other                                    other_21                  text       
+      Yes                                      answer_22_1               radio      
+      No                                       answer_22_2               radio      
+      Other                                                              radio      
+      Other                                    other_22                  text       
+      Salary *:                                answer_25                 text        *
+      Other                                    other_26                  text       
+      Position Start Date :                    answer_28                 text       
+      Position End Date :                      answer_29                 text       
+      Number of Positions *:                   answer_30                 text        *
+      Access applications through Trent Student Experience Portal deliveryOption1           radio      
+      Additional Application Options: Email Application online_applicationEmailOption_1 radio      
+      separate emails with a semi-colon
+                                 text       
+      Additional Application Options: Do not email applications online_applicationEmailOption_0 radio      
+      Access through corporate website         deliveryOption2           radio      
+      Enter URL for website you want students directed to: deliveryWebsiteUrl        text       
+      Application Deadline:*                   dateDeadline              text        *
+      If by website, go to :                   answer_34                 text       
+      Cover Letter                             answer_35_1               checkbox   
+      Resume                                   answer_35_2               checkbox   
+      Transcript                               answer_35_3               checkbox   
+      Other                                    answer_35_4               checkbox   
+      Province / State :                       answer_13                 select-one 
+      Country :                                answer_15                 select-one 
+      Opportunity Type *:                      answer_18                 select-one  *
+      Opportunity Location *:                  answer_21                 select-one  *
+      Industry :                               answer_26                 select-one 
+      Date Deadline Time                       dateDeadlineMinutes       select-one 
+
+      REQUIRED FIELDS (need to be mapped):
+        * Website *:                               id='answer_8' name='answer_8'
+        * Opportunity Title *:                     id='answer_17' name='answer_17'
+        * Salary *:                                id='answer_25' name='answer_25'
+        * Number of Positions *:                   id='answer_30' name='answer_30'
+        * Application Deadline:*                   id='dateDeadline' name='dateDeadline'
+        * Opportunity Type *:                      id='answer_18' name='answer_18'
+        * Opportunity Location *:                  id='answer_21' name='answer_21'
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_trent_01_url_check_20260430_135345.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_trent_02_post_login_20260430_135358.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_trent_03_navigation_20260430_135418.png
+        04_form: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_trent_04_form_20260430_135423.png
+
+
+================================================================================
+PORTAL: Université de Sherbrooke (sherbrooke)
+URL: https://trivio.usherbrooke.ca/employer/login.htm
+Overall: FAIL
+Total time: 26.32s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (9.05s)
+      Final URL:    https://trivio.usherbrooke.ca/employer/login.htm
+      Page title:   UDES - UdeS - Employeur - Ouverture de session
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: FAIL  (9.78s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='connexion' value='' id='' tag='a'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://trivio.usherbrooke.ca/User_Login.htm
+      Post-login title:     UDES - UdeS - Connexion
+      Still on login page:  True
+      Error:                Still on login page after click
+
+  [4] NAVIGATION: SKIP  (0s)
+      'Post a Job' found:     False
+      'Post a Job' info:      
+      'Post a Job' clicked:   False
+      Modal appeared:          False
+      Modal button clicked:    False
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               
+      Error:                   Login failed
+
+  [5] FORM SCAN: SKIP  (0s)
+      Total inputs:       0
+      Total textareas:    0
+      Total selects:      0
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     0
+      Required fields:    0
+      Error:              Login failed
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_sherbrooke_01_url_check_20260430_135440.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_sherbrooke_02_post_login_20260430_135450.png
+
+
+================================================================================
+PORTAL: Vancouver Island University (viu)
+URL: https://studentemployment.viu.ca/employers/employerlogin.htm
+Overall: FAIL
+Total time: 23.43s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (5.08s)
+      Final URL:    https://studentemployment.viu.ca/employers/employerlogin.htm
+      Page title:   Experience Hub - Experience Hub - Employers - Employer Login
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (9.44s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_5462784901657656' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://studentemployment.viu.ca/myAccount/dashboard.htm
+      Post-login title:     Experience Hub - MyAccount - Dashboard
+      Still on login page:  False
+
+  [4] NAVIGATION: FAIL  (2.37s)
+      'Post a Job' found:     False
+      'Post a Job' info:      
+      'Post a Job' clicked:   False
+      Modal appeared:          False
+      Modal button clicked:    False
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               
+      Error:                   'Post a Job' button not found on dashboard
+
+  [5] FORM SCAN: SKIP  (0s)
+      Total inputs:       0
+      Total textareas:    0
+      Total selects:      0
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     0
+      Required fields:    0
+      Error:              Navigation failed
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_viu_01_url_check_20260430_135502.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_viu_02_post_login_20260430_135512.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_viu_03_navigation_20260430_135514.png
+
+
+================================================================================
+PORTAL: Wilfrid Laurier University (wlu)
+URL: https://navigator.wlu.ca/home/employers/login.htm
+Overall: FAIL
+Total time: 24.18s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (4.63s)
+      Final URL:    https://navigator.wlu.ca/home/employers/login.htm
+      Page title:   Laurier Navigator - Home - Employers & Community - Login
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (10.83s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_5392181524377945' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://navigator.wlu.ca/suspended.htm
+      Post-login title:     Laurier Navigator - suspended
+      Still on login page:  False
+
+  [4] NAVIGATION: FAIL  (2.13s)
+      'Post a Job' found:     False
+      'Post a Job' info:      
+      'Post a Job' clicked:   False
+      Modal appeared:          False
+      Modal button clicked:    False
+      'Post a New Job' found:  False
+      'Post a New Job' clicked:False
+      Final URL:               
+      Error:                   'Post a Job' button not found on dashboard
+
+  [5] FORM SCAN: SKIP  (0s)
+      Total inputs:       0
+      Total textareas:    0
+      Total selects:      0
+      Total checkboxes:   0
+      Rich text editors:  0
+      Visible fields:     0
+      Required fields:    0
+      Error:              Navigation failed
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_wlu_01_url_check_20260430_135526.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_wlu_02_post_login_20260430_135537.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_wlu_03_navigation_20260430_135539.png
+
+
+================================================================================
+PORTAL: Saint Mary's University (smu)
+URL: https://career360.smu.ca/employers/login.htm
+Overall: PASS
+Total time: 48.76s
+================================================================================
+
+  [1] URL REACHABILITY: PASS  (6.95s)
+      Final URL:    https://career360.smu.ca/employers/login.htm
+      Page title:   Orbis Portal - Saint Mary's University - Employers & Community Partners - Login
+      Blocked:      False
+
+  [2] PLATFORM DETECTION: PASS
+      Expected:     symplicity
+      Detected:     symplicity
+      Has playbook: True
+
+  [3] LOGIN: PASS  (10.74s)
+      Username field found: True
+      Username field info:  id='j_username' name='j_username' type='text' placeholder=''
+      Password field found: True
+      Password field info:  id='j_password' name='j_password' type='password'
+      Login button found:   True
+      Login button info:    text='login' value='' id='button_5938375755907808' tag='button'
+      Credentials entered:  True
+      Login clicked:        True
+      Post-login URL:       https://career360.smu.ca/myAccount/dashboard.htm
+      Post-login title:     Orbis Portal - My Account - Dashboard
+      Still on login page:  False
+
+  [4] NAVIGATION: PASS  (17.62s)
+      'Post a Job' found:     True
+      'Post a Job' info:      text='work
+Post a Job' tag='button' selector='//button[contains(., 'Post a Job')]'
+      'Post a Job' clicked:   True
+      Modal appeared:          True
+      Modal button clicked:    True
+      'Post a New Job' found:  True
+      'Post a New Job' clicked:True
+      Final URL:               https://career360.smu.ca/myAccount/jobposting/postings.htm
+
+  [5] FORM SCAN: PASS  (6.88s)
+      Total inputs:       178
+      Total textareas:    4
+      Total selects:      10
+      Total checkboxes:   99
+      Rich text editors:  3
+      Visible fields:     87
+      Required fields:    3
+
+      ALL VISIBLE FIELDS:
+      Label                                    ID                        Type       Req  
+      --------------------------------------------------------------------------------
+      Casual                                   answer_18_1               checkbox   
+      Contract/Term                            answer_18_2               checkbox   
+      Full-Time                                answer_18_3               checkbox   
+      International                            answer_18_4               checkbox   
+      New Graduate                             answer_18_5               checkbox   
+      On-Campus                                answer_18_6               checkbox   
+      Paid Internship                          answer_18_7               checkbox   
+      Part-Time                                answer_18_8               checkbox   
+      Professional Development                 answer_18_9               checkbox   
+      Summer                                   answer_18_10              checkbox   
+      Unpaid Internship                        answer_18_11              checkbox   
+      Volunteer                                answer_18_12              checkbox   
+      Job Title *:                             answer_19                 text        *
+      Number of Positions :                    answer_20                 text       
+      Other                                    other_22                  text       
+      Criminal Record Check (CRC)              answer_25_1               checkbox   
+      Vulnerable Sector Search (VSS)           answer_25_2               checkbox   
+      Child Abuse Register Search              answer_25_3               checkbox   
+      Safety & Protective Equipment            answer_25_4               checkbox   
+      Immunizations                            answer_25_5               checkbox   
+      Access to Reliable Transportation        answer_25_6               checkbox   
+      Valid Drivers License                    answer_25_7               checkbox   
+      Other                                    answer_25_                checkbox   
+      Other                                    other_25                  text       
+      Computer/Laptop                          answer_26_1               checkbox   
+      Cellphone                                answer_26_2               checkbox   
+      Reliable Internet Access                 answer_26_3               checkbox   
+      Access to Printing                       answer_26_4               checkbox   
+      MS Office Suite                          answer_26_5               checkbox   
+      Webcam                                   answer_26_6               checkbox   
+      Headset/Microphone                       answer_26_7               checkbox   
+      Other                                    answer_26_                checkbox   
+      Other                                    other_26                  text       
+      Remote                                   answer_27_1               checkbox   
+      In-person                                answer_27_2               checkbox   
+      Hybrid/Flexible                          answer_27_3               checkbox   
+      Orientation Session (Overview of Organization & Position) answer_28_1               checkbox   
+      Training Session (Role Specific)         answer_28_2               checkbox   
+      Review of Documents (Employee Handbook, Annual Report, etc.) answer_28_3               checkbox   
+      Tour of Organization                     answer_28_4               checkbox   
+      Mentorship (Peers, Senior Employee, etc.) answer_28_5               checkbox   
+      Other                                    answer_28_                checkbox   
+      Other                                    other_28                  text       
+      Salary Amount: $                         salaryAmount              text       
+      Payment Frequency                        salaryNotAvailable        checkbox   
+      Hours Per Week:                          hoursPerWeek              text       
+      Desired Start Date :                     answer_33                 text       
+      Duration :                               answer_34                 text       
+      Desired End Date :                       answer_37                 text       
+      Canadian Citizen                         answer_39_1               checkbox   
+      Work Permit                              answer_39_2               checkbox   
+      Permanent Resident in Canada             answer_39_3               checkbox   
+      Undergraduate 1st Year                   answer_40_1               checkbox   
+      Undergraduate 2nd Year                   answer_40_2               checkbox   
+      Undergraduate 3rd Year                   answer_40_3               checkbox   
+      Undergraduate 4th Year                   answer_40_4               checkbox   
+      Undergraduate 4+ Year                    answer_40_5               checkbox   
+      Graduating Student (within next 12 months) answer_40_6               checkbox   
+      Diploma or Certificate Program           answer_40_7               checkbox   
+      Master's Student                         answer_40_8               checkbox   
+      PhD Student                              answer_40_9               checkbox   
+      Alumnus                                  answer_40_10              checkbox   
+      No                                       answer_41_1               radio      
+      Yes                                      answer_41_2               radio      
+      Applications Online                      deliveryOption1           radio      
+      Additional Application Options: Email all applications after the application exp online_applicationEmailOption_2 radio      
+      Additional Application Options: Email Application online_applicationEmailOption_1 radio      
+      separate emails with a semi-colon
+                                 text       
+      Additional Application Options: Do not email applications online_applicationEmailOption_0 radio      
+      Employer Website                         deliveryOption2           radio      
+      Enter URL for website you want students directed to: deliveryWebsiteUrl        text       
+      Application Deadline:*                   dateDeadline              text        *
+      Resume                                   answer_43_1               checkbox   
+      Cover Letter                             answer_43_2               checkbox   
+      Unofficial Transcript                    answer_43_3               checkbox   
+      Writing Sample                           answer_43_4               checkbox   
+      Experience Record                        answer_43_5               checkbox   
+      Portfoilo                                answer_43_6               checkbox   
+      References                               answer_43_7               checkbox   
+      Job Location City (list multiple locations if relevant) *: answer_21                 textarea    *
+      Job Location Province/State :            answer_22                 select-one 
+      Clusters                                 clusters                  select-multiple 
+      Your Cluster Selections                  selectedClusters          select-multiple 
+      Programs                                 programsToAdd             select-multiple 
+      Your Program Selections                  selectedPrograms          select-multiple 
+      Payment Frequency                        salaryPaymentFrequency    select-one 
+      Date Deadline Time                       dateDeadlineMinutes       select-one 
+
+      REQUIRED FIELDS (need to be mapped):
+        * Job Title *:                             id='answer_19' name='answer_19'
+        * Application Deadline:*                   id='dateDeadline' name='dateDeadline'
+        * Job Location City (list multiple locations if relevant) *: id='answer_21' name='answer_21'
+
+      SCREENSHOTS:
+        01_url_check: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_smu_01_url_check_20260430_135553.png
+        02_login: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_smu_02_post_login_20260430_135604.png
+        03_navigation: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_smu_03_navigation_20260430_135621.png
+        04_form: C:\Users\aritr\vosyn\vosyn-automation\screenshots\test_smu_04_form_20260430_135628.png
+
