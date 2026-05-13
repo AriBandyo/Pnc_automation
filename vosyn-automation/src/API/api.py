@@ -92,6 +92,10 @@ class SubmitRequest(BaseModel):
 
 # -- Endpoints
 
+@app.get("/")
+def root():
+    return {"status": "ok", "service": "Vosyn Portal API"}
+
 @app.get("/api/countries")
 def get_countries():
     """Return all countries that have portals configured."""

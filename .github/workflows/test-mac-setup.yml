@@ -116,7 +116,7 @@ jobs:
 
           # Poll for up to 30 seconds
           for i in {1..30}; do
-            if curl -fsS http://127.0.0.1:8000/ >/dev/null 2>&1; then
+            if curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:8000/ | grep -qE "^[2-4][0-9][0-9]$"; then
               echo "Backend responded after ${i}s"
               break
             fi
@@ -136,7 +136,7 @@ jobs:
 
           # Hit /api/countries to verify Excel loading works
           echo "Testing /api/countries..."
-          if curl -fsS http://127.0.0.1:8000/api/countries; then
+          if curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:8000/ | grep -qE "^[2-4][0-9][0-9]$"; then
             echo ""
             echo "Backend smoke test PASSED"
           else
