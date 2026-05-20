@@ -1,0 +1,49 @@
+#!/bin/bash
+#
+# VosynAutomation.app launcher
+# This file is executed by macOS when the user double-clicks VosynAutomation.app.
+#
+
+APP_MACOS_DIR="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_ROOT="$(cd "$APP_MACOS_DIR/../../.." && pwd)"
+
+SETUP_SCRIPT="$PROJECT_ROOT/launcher/mac/setup.sh"
+START_SCRIPT="$PROJECT_ROOT/launcher/mac/start.sh"
+
+if [ ! -f "$SETUP_SCRIPT" ]; then
+  osascript -e 'display dialog "Could not find launcher/mac/setup.sh. Make sure VosynAutomation.app is inside the project root folder." buttons {"OK"} with icon stop'
+  exit 1
+fi
+
+if [ ! -f "$START_SCRIPT" ]; then
+  osascript -e 'display dialog "Could not find launcher/mac/start.sh. Make sure VosynAutomation.app is inside the project root folder." buttons {"OK"} with icon stop'
+  exit 1
+fi
+
+chmod +x "$PROJECT_ROOT/launcher/mac/"*.sh 2>/dev/null
+
+SETUP_DONE=1
+
+if [ ! -x "$PROJECT_ROOT/vosyn-automation/env/bin/python" ]; then
+  SETUP_DONE=0
+fi
+
+if [ ! -d "$PROJECT_ROOT/university-job-portal/university-job-portal/node_modules" ]; then
+  SETUP_DONE=0
+fi
+
+if [ "$SETUP_DONE" -eq 0 ]; then
+  osascript <<EOF
+tell application "Terminal"
+  activate
+  do script "cd '$PROJECT_ROOT' && echo 'Running first-time setup...' && ./launcher/mac/setup.sh && echo 'Setup complete. Starting app...' && ./launcher/mac/start.sh"
+end tell
+EOF
+else
+  osascript <<EOF
+tell application "Terminal"
+  activate
+  do script "cd '$PROJECT_ROOT' && ./launcher/mac/start.sh"
+end tell
+EOF
+fi
